@@ -17,6 +17,4 @@ public interface ApiService {
 
     @GET("query")
     Observable<Result<List<Message>>> getMessage(@Query("type") String type, @Query("postid") String postid);
-
-
 }

@@ -27,6 +27,7 @@ public class MainActivity extends RxAppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button = (Button) findViewById(R.id.button2);
+
         RetrofitHelper.creatApi(ApiService.class).getMessage("yuantong","200382770316")
                 .compose(MainActivity.this.<Result<List<Message>>>bindUntilEvent(ActivityEvent.DESTROY))
                 .compose(SchedulerTransformer.<Result<List<Message>>>transformer())

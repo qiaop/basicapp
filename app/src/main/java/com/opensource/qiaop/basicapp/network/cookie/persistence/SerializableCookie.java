@@ -12,7 +12,7 @@ import java.io.Serializable;
 import okhttp3.Cookie;
 
 /**
- * Created by qiaopeng@yuntetong.net on 2017/5/3.
+ * Created by qiaop on 2017/5/3.
  */
 
 public class SerializableCookie implements Serializable {
